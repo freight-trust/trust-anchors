@@ -1,0 +1,2 @@
+curl -s http://www.internic.net/domain/root.zone | awk ' == DS { print }' | sort -n | uniq -c
+curl -s http://www.internic.net/domain/root.zone | awk ' == DS { print }' | sort -n | uniq -c

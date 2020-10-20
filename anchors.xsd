@@ -1,0 +1,30 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="KeyTag" type="xs:short"/>
+  <xs:element name="Algorithm" type="xs:byte"/>
+  <xs:element name="DigestType" type="xs:byte"/>
+  <xs:element name="Digest" type="xs:string"/>
+  <xs:element name="Zone" type="xs:string"/>
+  <xs:element name="KeyDigest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="KeyTag"/>
+        <xs:element ref="Algorithm"/>
+        <xs:element ref="DigestType"/>
+        <xs:element ref="Digest"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id" use="optional"/>
+      <xs:attribute type="xs:dateTime" name="validFrom" use="optional"/>
+      <xs:attribute type="xs:dateTime" name="validUntil" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TrustAnchor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Zone"/>
+        <xs:element ref="KeyDigest" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id"/>
+      <xs:attribute type="xs:anyURI" name="source"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

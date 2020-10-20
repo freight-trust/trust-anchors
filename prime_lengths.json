@@ -1,0 +1,14 @@
+[
+	{ "Value": "0", "Description": "Unassigned", "Reference": "" },
+	{
+		"Value": "1",
+		"Description": "index into well-known table",
+		"Reference": "[RFC2539]"
+	},
+	{
+		"Value": "2",
+		"Description": "index into well-known table",
+		"Reference": "[RFC2539]"
+	},
+	{ "Value": "3-15", "Description": "Unassigned", "Reference": "" }
+]

@@ -1,0 +1,18 @@
+{
+    "en": {
+        "Detaljhandel": "Retail",
+        "Finans": "Finance",
+        "Fysisk s\u00e4kerhet": "Security Industry",
+        "F\u00f6rening": "Association",
+        "ISP": "ISP",
+        "IT": "IT",
+        "Industri": "Industry",
+        "Kommun": "Municipality",
+        "Landsting": "County Council",
+        "Media": "Media",
+        "Myndighet": "Government Agency",
+        "Statligt bolag": "Public Company",
+        "Utbildning": "Education",
+        "Telekom": "Telecom"
+    }
+}

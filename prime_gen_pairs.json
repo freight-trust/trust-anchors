@@ -1,0 +1,19 @@
+[
+	{ "Value": "0x0000", "Description": "Unassigned", "Reference": "" },
+	{
+		"Value": "0x0001",
+		"Description": "Well-Known Group 1: A 768 bit prime",
+		"Reference": "[RFC2539]"
+	},
+	{
+		"Value": "0x0002",
+		"Description": "Well-Known Group 2: A 1024 bit prime",
+		"Reference": "[RFC2539]"
+	},
+	{ "Value": "0x0003-0xbfff", "Description": "Unassigned", "Reference": "" },
+	{
+		"Value": "0xc000-0xffff",
+		"Description": "Private Use",
+		"Reference": "[RFC2539]"
+	}
+]
